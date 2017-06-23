@@ -1,0 +1,24 @@
+
+
+.main{
+    background-color: #42a4f4;
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 15px;
+    padding-bottom: 40px;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+    padding: 0;
+    margin-left: 100px;
+}
+
+.padding-fix{
+    padding-top: 15px;
+    
+}
+
+.footer {
+    background-color: #F8F9FB;
+}
