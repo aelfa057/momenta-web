@@ -3,7 +3,7 @@
 .main{
     background-color: #42a4f4;
     font-weight: bold;
-    font-family: "Arial";
+    font-family: arial;
     border-radius: 15px;
     padding-bottom: 40px;
 }
@@ -12,6 +12,7 @@
     margin-bottom: 0 !important;
     padding: 0;
     margin-left: 100px;
+    background-color: #F5F5F5;;
 }
 
 .padding-fix{
@@ -19,6 +20,30 @@
     
 }
 
-.footer {
-    background-color: #F8F9FB;
+.footer-fix {
+    background-color: #F5F5F5;
+    font-weight: bold;
+    height: 200px;
+}
+
+
+#ppBody
+{
+    font-size:11pt;
+    width:100%;
+}
+#ppHeader
+{
+    font-family:verdana;
+    font-size:21pt;
+    width:100%;
+}
+.ppConsistencies
+{
+    display:none;
+}
+
+
+#google-play {
+    vertical-align: middle;
 }
