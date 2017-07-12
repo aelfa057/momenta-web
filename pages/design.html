@@ -27,8 +27,8 @@
       <ul class="nav navbar-nav">
         <li style="padding-right: 20px;"><img src="/pictures/momenta_small.png" ></img></li>
         <!-- <li><a href="/index.html"><img src="/pictures/momenta_small.png" height="50" align="left"></img></a></li> -->
-        <li class="active"><a href="/index.html"><strong>Home</strong><span class="sr-only">(current)</span></a></li>
-        <li><a href="/pages/design.html"><strong>Momenta</strong></a></li>
+        <li><a href="/index.html"><strong>Home</strong></a></li>
+        <li class="active"><a href="/pages/design.html"><strong>Momenta</strong><span class="sr-only">(current)</span></a></li>
         <li><a href="#"><strong>Our Team</strong></a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.momenta_app&hl=en"><strong>Download</strong></a></li>
         <li class="dropdown">
@@ -38,31 +38,42 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+
 <body>
-  <div class="row">
     <div class="col-md-12 main padding-fix">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-5">
-          <img src="/pictures/momenta_icon.png" height="200" margin: "left"></img>
-        </div>
-        <div class="col-md-7 col-md-offset-3" style="padding-top: 50px">
-          <div class="col-md-3 col-md-offset-1">
-            <img src="/pictures/Momenta-android.png" height="400"></img>
-          </div>
-          <div class="col-md-3 col-md-offset-1">
-            <div style="padding-top: 75px; font-family: Arial;">
-              <h1><strong>Download Now!</strong></h1>
-            <a href="https://play.google.com/store/apps/details?id=com.momenta_app&hl=en"><img src="/pictures/google-playQ.png"></img></a>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                
+                <div class="w3-content w3-display-container" align="middle">
+                  <img class="mySlides w3-animate-right" src="/pictures/Momenta-android.png" height= "500">
+                 
+                  <img class="mySlides w3-animate-right" src="/pictures/momenta-badge.png" height= "500">
+                  <img class="mySlides w3-animate-right" src="/pictures/momenta-list.png" height= "500">
+                
+                  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                  <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}    
+                        x[myIndex-1].style.display = "block";  
+                        setTimeout(carousel, 3500);    
+                    }
+                  </script>
+                </div>
             </div>
-          </div>
-          
         </div>
-      </div>
-      </br>
-      <!-- <input type="button" data-name="show" value="Toggle" id="toggle"> -->
     </div>
-  </div>  
-  <div class="footer-fix">
+  
+    <div class="footer-fix">
   <div class="row">
     <!-- <div class="footer-fix"> -->
       <div class="col-md-2 col-md-offset-2">
@@ -94,9 +105,9 @@
       </div>
     </div>
   </div>
-
-
   
+  
+  <script src="/features.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
