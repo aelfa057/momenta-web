@@ -25,11 +25,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li style="padding-right: 20px;"><img src="/pictures/momenta_small.png" ></img></li>
+        <li style="padding-right: 50px;"><img src="/pictures/momenta_small.png" ></img></li>
         <!-- <li><a href="/index.html"><img src="/pictures/momenta_small.png" height="50" align="left"></img></a></li> -->
         <li><a href="/index.html"><strong>Home</strong></a></li>
         <li class="active"><a href="/pages/design.html"><strong>Momenta</strong><span class="sr-only">(current)</span></a></li>
-        <li><a href="#"><strong>Our Team</strong></a></li>
+        <li><a href="/pages/privacy.html"><strong>Privacy</strong></a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.momenta_app&hl=en"><strong>Download</strong></a></li>
         <li class="dropdown">
         </li>
@@ -38,14 +38,21 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
 <body>
+  <div class="row">
     <div class="col-md-12 main padding-fix">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 
                 <div class="w3-content w3-display-container" align="middle">
-                  <img class="mySlides w3-animate-right" src="/pictures/Momenta-android.png" height= "500">
+                  
+                  <div class="w3-display-container mySlides">
+                    <img class="w3-animate-right" src="/pictures/MomentaMainComp.png" height= "500" style="padding-top: 50px">
+                    <div class="w3-display-topleft w3-container w3-padding-16">
+                      Sign Up!
+                    </div>
+                 </div>
+                 
                  
                   <img class="mySlides w3-animate-right" src="/pictures/momenta-badge.png" height= "500">
                   <img class="mySlides w3-animate-right" src="/pictures/momenta-list.png" height= "500">
@@ -65,12 +72,13 @@
                         myIndex++;
                         if (myIndex > x.length) {myIndex = 1}    
                         x[myIndex-1].style.display = "block";  
-                        setTimeout(carousel, 3500);    
+                        setTimeout(carousel, 4000);    
                     }
                   </script>
                 </div>
             </div>
         </div>
+    </div>
     </div>
   
     <div class="footer-fix">
@@ -106,9 +114,8 @@
     </div>
   </div>
   
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="/features.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>

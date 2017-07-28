@@ -18,3 +18,7 @@
     }
 
 /*  END OF SLIDESHOW FUNCTIONALITY */
+
+$(document).ready(function() {
+    // all custom jQuery will go here
+});

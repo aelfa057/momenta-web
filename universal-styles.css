@@ -3,16 +3,23 @@
 .main{
     background-color: #42a4f4;
     font-weight: bold;
+    color: black;
     font-family: arial;
     border-radius: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    display: block;
+    height: 100%;
+}
+
+.mtext {
+    color: #42a4f4;
 }
 
 .navbar {
+    margin-left: 0 !important;
     margin-bottom: 0 !important;
     padding: 0;
-    margin-left: 100px;
-    background-color: #F5F5F5;
+    background-color: #42a4f4;
 }
 
 .padding-fix{
@@ -57,13 +64,14 @@
     overflow:hidden;
     text-decoration:none;
     color:inherit;
-    background-color:inherit;
+    background-color:#42a4f4;
     text-align:center;
     cursor:pointer;
     white-space:nowrap
 }
 
 .w3-display-left {
+    color: #42a4f4;
     position: absolute;
     top: 50%;
     left: 0%;
@@ -83,5 +91,41 @@
 
 .w3-animate-right {
     position: relative;
-    animation: animateright 0.4s;
+    animation: animateright 0.7s;
+}
+
+
+@keyframes animateright {
+    from {
+        right:-300px;
+        opacity:0
+    } 
+    to {
+        right:0;
+        opacity:1
+    }
+}
+
+.w3-display-topleft {
+    background-color: #F8F8F8;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+.w3-large {
+    font-size: 180px!important;
+}
+
+.w3-container, .w3-panel {
+    padding: 0.01em 16px;
+}
+
+.w3-display-container {
+    position: relative;
 }
